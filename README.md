@@ -1,29 +1,17 @@
-# bunnybooks
+# Income Statement Generator
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a web-based application that allows you to generate an income statement for your business. 
 
-## Recommended IDE Setup
+## Technologies
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The application is built using Vue3 (Composition API, Pinia), PHP, MySQL, and Bootstrap.
 
-## Customize configuration
+## Usage
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Categories Page**: This page allows you to enter all the categories of Income, Expenses, and Cost of sale that you use in your business.
+- **Transactions Page**: This page is where you enter your transaction details—date, description, amount, and category (matching with the categories in your "Categories" page).
+- **Income Statement Page**: This page is where you see your income statement. It is generated automatically based on the transactions you enter in the "Transactions" page.
 
-## Project Setup
+## License
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+This project is licensed under the [MIT License](https://github.com/kysja/bunnybooks/blob/master/LICENSE).

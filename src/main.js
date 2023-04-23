@@ -5,7 +5,6 @@ import router from './router'
 
 import './assets/css/bootstrap.css'
 import './assets/css/main.css'
-// import './assets/css/fontawesome6.all.min.css'
 
 
 const app = createApp(App)

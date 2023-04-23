@@ -7,6 +7,8 @@
     import { storeToRefs } from 'pinia'
     import { useCategoryStore } from './stores/CategoryStore.js'
 
+    
+    
     const categoryStore = useCategoryStore()
     const { categories } = storeToRefs(categoryStore)
     categoryStore.getAll()
@@ -22,10 +24,10 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 border-right bg-light p-4">
+            <div class="col-lg-3 border-right bg-light p-2">
                 <Sidebar />
             </div>
-            <div class="col-lg-9 p-4">
+            <div class="col-lg-9 p-3">
                 <RouterView />
             </div>
         </div>
