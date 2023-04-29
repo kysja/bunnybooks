@@ -29,8 +29,9 @@
     }
 
     const del = (catId) => {
-        if(!confirm('Are you sure?')) return
-        categoryStore.delete(catId)
+        alert ("This feature is turned off in the demo version.")
+        // if(!confirm('Are you sure?')) return
+        // categoryStore.delete(catId)
     }
 
 </script>

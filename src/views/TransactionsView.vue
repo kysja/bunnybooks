@@ -38,8 +38,9 @@
 
 
     const del = (tranId) => {
-        if(!confirm('Are you sure?')) return
-        transactionStore.delete(tranId)
+        alert ("This feature is turned off in the demo version.")
+        // if(!confirm('Are you sure?')) return
+        // transactionStore.delete(tranId)
     }
 
 </script>

@@ -46,23 +46,24 @@
     })
 
     const save = () => {
-        if (form.name == '') 
-            errModal.value = 'Name is required'
-        else if (form.category_id == 0) 
-            errModal.value = 'Category is required'
-        if (errModal.value != '') {
-            setTimeout(() => errModal.value = '', 5000)
-            return
-        }
+        alert("This feature is turned off in the demo version.")
+        // if (form.name == '') 
+        //     errModal.value = 'Name is required'
+        // else if (form.category_id == 0) 
+        //     errModal.value = 'Category is required'
+        // if (errModal.value != '') {
+        //     setTimeout(() => errModal.value = '', 5000)
+        //     return
+        // }
 
-        form.id == 0 ? transactionStore.add(form) : transactionStore.update(form)
+        // form.id == 0 ? transactionStore.add(form) : transactionStore.update(form)
 
-        form.id = 0
-        form.category_id = 0
-        form.dt = new Date().toISOString().slice(0, 10)
-        form.name = ''
-        form.description = ''
-        form.amount = 0
+        // form.id = 0
+        // form.category_id = 0
+        // form.dt = new Date().toISOString().slice(0, 10)
+        // form.name = ''
+        // form.description = ''
+        // form.amount = 0
 
         document.getElementById('btnModalClose').click()
     }

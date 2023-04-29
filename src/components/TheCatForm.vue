@@ -33,17 +33,18 @@
     })
 
     const save = () => {
-        if (form.name == '') {
-            errModal.value = 'Name is required'
-            setTimeout(() => errModal.value = '', 5000)
-            return
-        }
+        alert("This feature is turned off in the demo version.")
+        // if (form.name == '') {
+        //     errModal.value = 'Name is required'
+        //     setTimeout(() => errModal.value = '', 5000)
+        //     return
+        // }
 
-        form.id == 0 ? categoryStore.add(form) : categoryStore.update(form)
+        // form.id == 0 ? categoryStore.add(form) : categoryStore.update(form)
 
-        form.id = 0
-        form.name = ''
-        form.description = ''
+        // form.id = 0
+        // form.name = ''
+        // form.description = ''
 
         document.getElementById('btnModalClose').click()
     }
